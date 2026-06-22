@@ -36,7 +36,7 @@ body {
        transition: box-shadow 0.3s ease-in-out;    
 }
 .card:hover {
-       transform: translateY(-8px);
+       transform:  translateY(-8px);
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),      
                    0 6px 20px 0 rgba(70, 79, 96, 0.19);
 }
@@ -71,7 +71,7 @@ body {
        justify-content: space-between;
        margin-top: auto;       
        }
-.buy-button {
+.buy-button{
        color: #515076;
        background-color: #FFFFFF;
        line-height: 20px;
@@ -96,10 +96,14 @@ body {
                    0 0 0 1px rgba(70, 79, 96, 0.16);
        border: none;
        outline: none;
-.buy-button: focus {
+}
+.buy-button:{
        border: 1px solid red;
-}    
-.buy-button: hover {
-       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),      
-                   0 0 0 1px rgba(70, 79, 96, 0.16);
+}
+.buy-button:hover {
+       border-color: #4FDB8A33;
+       background-color: #F7F9FC;
+       box-shadow: 0px 0px 0px 4px #4FDB8A33,
+                     0px 0px 0px 1px #464F6052,
+                     0px 1px 1px 0px #0000001A; 
 }
