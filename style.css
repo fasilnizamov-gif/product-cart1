@@ -14,7 +14,7 @@ body {
        width: 100%;
 }
 .container {
-       width: 1110px;
+       max-width: 1110px;
        margin: 0 auto;
        padding-top: 100px;
 }
@@ -25,10 +25,20 @@ body {
 }
 
 .card {
-       display: inline-block;
+       /*display: inline-block;*/
+       display: flex;
+       flex-direction: column;
        background-color:#F7F7FA;
        width: 340px;
-       padding: 25px;      
+       padding: 25px; 
+       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),      
+                   0 0 0 1px rgba(70, 79, 96, 0.16);
+       transition: box-shadow 0.3s ease-in-out;    
+}
+.card:hover {
+       transform: translateY(-8px);
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),      
+                   0 6px 20px 0 rgba(70, 79, 96, 0.19);
 }
 
 .text {
@@ -58,5 +68,38 @@ body {
 .price {       
        font-size: 20px;      
        display: flex;
-       justify-content: space-between;       
+       justify-content: space-between;
+       margin-top: auto;       
        }
+.buy-button {
+       color: #515076;
+       background-color: #FFFFFF;
+       line-height: 20px;
+       border: 1px solid #515076;        
+       border-radius: 6px;
+      padding-top: 6px;
+       padding-bottom: 6px;
+       padding-left: 12px;
+       padding-right: 12px;
+       display: block;
+       margin: 0 auto;
+       font-size: 18px;
+       cursor: pointer;
+       min-width: 102px;
+       height: 32px;
+       display: flex;
+       align-items: center;
+       gap: 8px;    
+       font-family: Montserrat, sans-serif;
+       font-width: 500px;  
+       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),      
+                   0 0 0 1px rgba(70, 79, 96, 0.16);
+       border: none;
+       outline: none;
+.buy-button: focus {
+       border: 1px solid red;
+}    
+.buy-button: hover {
+       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),      
+                   0 0 0 1px rgba(70, 79, 96, 0.16);
+}
