@@ -97,7 +97,7 @@ body {
        border: none;
        outline: none;
 }
-.buy-button:{
+.buy-button{
        border: 1px solid red;
 }
 .buy-button:hover {
