@@ -1,6 +1,11 @@
 
- * {
-       box-sizing: border-box;
+
+
+*, 
+*::before,
+*::after 
+{
+       box-sizing:border-box;
 }
 body {
        font-family: Montserrat, sans-serif;
@@ -23,8 +28,19 @@ body {
        line-height: 78px;       
        text-align: center;            
 }
+.products {
+       list-style: none;
+       padding: 0;
+       margin: 0 auto;
+       display: flex;
+       flex-wrap: wrap;
+       row-gap: 45px;
+       column-gap: 10px;
+       justify-content: center;
+       max-width: 1110px;
+         }
 
-.card {
+.products__item card {
        /*display: inline-block;*/
        display: flex;
        flex-direction: column;
@@ -41,31 +57,32 @@ body {
                    0 6px 20px 0 rgba(70, 79, 96, 0.19);
 }
 
-.text {
+.card__category {
        font-size: 12px;       
        line-height: 24px;
        color: #A5A3B9;
        text-transform: uppercase;
 }
+card__name {
 
-.products-list {
-       list-style: none;
-       padding: 0;
-       margin: 0 auto;
-       display: flex;
-       flex-wrap: wrap;
-       row-gap: 45px;
-       column-gap: 10px;
-       justify-content: center;
-       max-width: 1110px;
-         }
+}
+.card__descripstion {
+
+}
+
+.card__compound compound {
+
+}
+.compound__name {
+
+}
 
 
-.all-composition {
+.compound__list {
        padding-left: 15px;
        padding: 25px;
 }
-.price {       
+.card__price {       
        font-size: 20px;      
        display: flex;
        justify-content: space-between;
