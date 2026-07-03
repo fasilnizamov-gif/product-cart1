@@ -9,21 +9,29 @@
 }
 body {
        font-family: Montserrat, sans-serif;
-       background-image: url("images/bg1.png");
-       background-repeat: no-repeat;
-       background-size: 50%;
-       background-position: 50% 0;
-       font-size: 13px;
+              font-size: 13px;
        line-height: 18px;
        color: #515076;       
        width: 100%;
 }
-.container {
+.catalog {
+       display: flex;
        max-width: 1110px;
        margin: 0 auto;
-       padding-top: 100px;
+       padding-top: 220px;
+       
+.catalog__container {
+       background-color: #FFFFFF;
+       background-image: url("images/bg1.png");
+       background-repeat: no-repeat;
+       background-size: 50%;
+       background-position: 50% 0;
+       padding-top: 0;
 }
-.title {
+}
+.catalog__title {
+       margin-top: 220px;
+       margin-bottom: 110px;
        font-size: 70px;
        line-height: 78px;       
        text-align: center;            
@@ -63,15 +71,19 @@ body {
        color: #A5A3B9;
        text-transform: uppercase;
 }
-card__name {
-
+.card__name {
+       font-size: 20px;
+       line-height: 27px;
+       margin:0;
 }
 .card__descripstion {
-
+       font-size: 13px;       
+       line-height: 18px;
+       color: #515076;
 }
 
 .card__compound compound {
-
+       width: 252px;
 }
 .products {
        display: flex;
@@ -87,7 +99,7 @@ card__name {
 }
 
 .compound__name {
-
+font-size: 20px;
 }
 
 
