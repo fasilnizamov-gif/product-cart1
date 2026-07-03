@@ -28,38 +28,38 @@ body {
        line-height: 78px;       
        text-align: center;            
 }
-.products {
+.clear-list {
        list-style: none;
-       padding: 0;
        margin: 0 auto;
-       display: flex;
-       flex-wrap: wrap;
-       row-gap: 45px;
-       column-gap: 10px;
-       justify-content: center;
-       max-width: 1110px;
-         }
+       padding: 0;
+}
 
-.products__item card {
-       /*display: inline-block;*/
+.card {
+       background-color:#F7F7FA;
+       padding: 25px;
+       /* display: inline-block; */
        display: flex;
        flex-direction: column;
-       background-color:#F7F7FA;
-       width: 340px;
-       padding: 25px; 
+       width: 340px; 
+       width: 100%;
        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),      
-                   0 0 0 1px rgba(70, 79, 96, 0.16);
-       transition: box-shadow 0.3s ease-in-out;    
+                     0 0 0 1px rgba(70, 79, 96, 0.16);
+       transition: box-shadow 0.3s ease-in-out;     
 }
 .card:hover {
        transform:  translateY(-8px);
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),      
                    0 6px 20px 0 rgba(70, 79, 96, 0.19);
 }
+.card__image {
+       display: block;
+       width: 290px;
+}
 
 .card__category {
-       font-size: 12px;       
-       line-height: 24px;
+       display: block;
+       font-size: 13px;       
+       line-height: 18px;
        color: #A5A3B9;
        text-transform: uppercase;
 }
@@ -73,6 +73,19 @@ card__name {
 .card__compound compound {
 
 }
+.products {
+       display: flex;
+       flex-wrap: wrap;
+       row-gap: 45px;
+       column-gap: 10px;
+       justify-content: center;
+       max-width: 1110px;
+         }
+
+.products__item {
+       width: 340px;  
+}
+
 .compound__name {
 
 }
